@@ -13,7 +13,39 @@
         <i class="fab fa-instagram"></i>
         <a class="navbar-brand" href="#">Instagram</a>
         <div class="mr-auto"></div>
-        <button type="button" class="btn btn-info">Nuevo Post</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Nuevo Post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">ingreso de nuevo post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                    <label for="titulos">Ingrese titulo</label>
+                    <input type="text" class="form-control" id="titulos" placeholder="ingrese un titulo">
+                        </div>
+                        <div class="form-group">
+                    <label for="comentario">Ingrese comentario</label>
+                    <textarea class="form-control" id="comentario" rows="3" style="resize: none"></textarea>
+                        </div>
+                        <div class="form-group">
+                    <label for="ingresoarchivo">seleccione archivo</label>
+                    <input type="file" class="form-control" id="ingresoarchivo">
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                      <button type="button" class="btn btn-info">ingresar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         <div class="dropdown">
                 <button class="btn btn-info dropdown-toggle fas fa-cog" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 </button>
@@ -39,7 +71,7 @@
         <div class="row">
                 <div class="col-md-12 d-flex justify-content-md-center" style="background-color: #ddd;">
                         <div class="card" style="width: 18rem;">
-                                <img src="./assets/static/GATO.jpg" class="card-img-top" alt="perro">
+                                <img src="./assets/static/GATO.jpg" class="card-img-top" alt="gato">
                                 <div class="card-body">
                                   <h5 class="card-title">gato</h5>
                                   <p class="card-text">no se que poner</p>
@@ -51,7 +83,7 @@
             <div class="row">
                     <div class="col-md-12 d-flex justify-content-md-center" style="background-color: #ddd;">
                             <div class="card" style="width: 18rem;">
-                                    <img src="./assets/static/" class="card-img-top" alt="perro">
+                                    <img src="./assets/static/hammster.jpg" class="card-img-top" alt="hammster">
                                     <div class="card-body">
                                       <h5 class="card-title">hammster</h5>
                                       <p class="card-text">traga traga :v!</p>
